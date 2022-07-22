@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MyFirstClass {
+public class GreetingClass {
     public static void main(String[] args) {
         String name, address;
         System.out.println("What is your name?");
