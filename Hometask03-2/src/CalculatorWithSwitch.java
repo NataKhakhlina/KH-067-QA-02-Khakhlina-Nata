@@ -11,26 +11,32 @@ public class CalculatorWithSwitch {
         System.out.print("Please input the second value b = ");
         double b = scanner.nextDouble();
         double c;
+        final String PLUS = "+";
+        final String MINUS = "-";
+        final String MULTIPLICATION = "*";
+        final String DIVISION = "/";
+        final String MODULO = "%";
+
         switch (operation) {
-            case "+":
+            case PLUS:
                 c = a + b;
-                System.out.println("a + b = " + c);
+                System.out.printf("%f %s %f = %f", a, operation, b, c);
                 break;
-            case "-":
+            case MINUS:
                 c = a - b;
-                System.out.println("a - b = " + c);
+                System.out.printf("%f %s %f = %f", a, operation, b, c);
                 break;
-            case "*":
+            case MULTIPLICATION:
                 c = a * b;
-                System.out.println("a * b = " + c);
+                System.out.printf("%f %s %f = %f", a, operation, b, c);
                 break;
-            case "/":
+            case DIVISION:
                 c = a / b;
-                System.out.println("a / b = " + c);
+                System.out.printf("%f %s %f = %f", a, operation, b, c);
                 break;
-            case "%":
+            case MODULO:
                 c = a % b;
-                System.out.println("a % b = " + c);
+                System.out.printf("%f %s %f = %f", a, operation, b, c);
                 break;
             default:
                 System.out.println("You input unsupported operation.");
